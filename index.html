@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Billiard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/three.min.js"></script>
+
+    <script type="text/javascript" src="js/cannon.min.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+
+    <script type="text/javascript" src="js/OBJLoader.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/build.js"></script>
+    
+    
+
+</head>
+
+<body>
+    <div id="world">
+        <img src="img/up-down.png" id="hitArrow" />
+        <img src="img/round2.png" id="hitRound" />
+        <div id="roundDummy" /></div>
+
+    <div id="hitAnim">
+        <div></div>
+        <div></div>
+
+    </div>
+    <div id="hitLine">
+        <div>
+            <img src="img/hitline.png" />
+        </div>
+
+    </div>
+    <img src="img/hand.png" id="hand" />
+
+    </div>
+
+
+    <div id="player1balls"></div>
+    <div id="player1escBalls"></div>
+    <div id="player2balls"></div>
+    <div id="player2escBalls"></div>
+    <img id="ballsplace" src="img/forballs.png" />
+
+
+    <div id="mainmenu">
+        <!--div class="space"></div -->
+        <img src="img/logo_pool.png" id="name" />
+        <div class="space"></div>
+        <img src="img/mode.png" id="mode" />
+        <div class="space"></div>
+        <div id="mode_wrap">
+            <div id="mode0" class="shadow active">
+                <img src="img/player.png" />
+                <img src="img/vs.png" />
+                <img src="img/bot.png" />
+            </div>
+            <div id="mode1" class="shadow active">
+                <img src="img/player.png" />
+                <img src="img/vs.png" />
+                <img src="img/player.png" />
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="sound" class="shadow active bg">
+        <img src="img/sound.png" />
+        <img src="img/line.png" id="line" />
+    </div>
+
+    <div id="exit" class="shadow active bg">
+        <img src="img/exit.png" />
+    </div>
+
+    <div id="restart" class="shadow active bg">
+        <img src="img/restart.png" />
+    </div>
+
+    <div id="curTurn" class="">Player 1 Turn</div>
+
+    <div id="gameEnd" class="shadow bg">
+
+        <div id="line1"></div>
+        <div id="line2"></div>
+        Game Time: <span id="gameTime"></span><br/>
+
+
+        <div id="exit2" class="shadow active bg">
+            <img src="img/exit.png" />
+        </div>
+
+        <div id="restart2" class="shadow active bg">
+            <img src="img/restart.png" />
+        </div>
+    </div>
+
+    <div id="fullScreen" class="shadow active bg">
+        <img src="img/fullscreen.png" />
+    </div>
+
+
+
+    <div id="powerWrap">
+        <div id="power">
+
+        </div>
+    </div>
+    <img id="powerBorder" src="img/bill_power.png" />
+
+
+
+
+    <div id="loader_bg">
+        <div id="loader">
+            <div class="ball"></div>
+            <div class="ball1"></div>
+            Loading...
+        </div>
+    </div>
+
+    <div id="mainMenu"></div>
+    <div id="controlsHud"></div>
+
+    <div id="howToPlay">
+        <strong>How to play:</strong><br/> 1. Rotate the camera - hold the mouse on the screen and turn<br/> 2. Strike the ball - hold the mouse in the area and pull it down
+    </div>
+
+    <audio src="Sounds/ball.mp3" id="ball"></audio>
+    <audio src="Sounds/ball01s.mp3" id="ball01"></audio>
+    <audio src="Sounds/ball02s.mp3" id="ball02"></audio>
+    <audio src="Sounds/ball03s.mp3" id="ball03"></audio>
+    <audio src="Sounds/ballball.mp3" id="ballball"></audio>
+    <audio src="Sounds/board01.mp3" id="board01"></audio>
+    <audio src="Sounds/board02.mp3" id="board02"></audio>
+    <audio src="Sounds/board03.mp3" id="board03"></audio>
+    <audio src="Sounds/dropcue07.mp3" id="dropcue07"></audio>
+    <audio src="Sounds/dropcue08.mp3" id="dropcue08"></audio>
+    <audio src="Sounds/dropcue09.mp3" id="dropcue09"></audio>
+    <audio src="Sounds/dropcue10.mp3" id="dropcue10"></audio>
+    <audio src="Sounds/hitcue05.mp3" id="hitcue05"></audio>
+    <audio src="Sounds/hitcue06.mp3" id="hitcue06"></audio>
+    <audio src="Sounds/Ending_aplodisments.mp3" id="ending"></audio>
+
+
+
+</body>
+
+</html>
